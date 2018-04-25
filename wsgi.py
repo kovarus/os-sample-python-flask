@@ -9,7 +9,7 @@ def hello():
 
 @application.route('/')
 @application.rout('/index')
-def.index():
+def index():
     user = {'username': 'Leon'}
     return render_template('index.html', title='home', user=user)
 
