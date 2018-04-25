@@ -8,7 +8,7 @@ def hello():
     return 'Hello World!'
 
 @application.route('/')
-@application.rout('/index')
+@application.route('/index')
 def index():
     user = {'username': 'Leon'}
     return render_template('index.html', title='home', user=user)
