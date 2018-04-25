@@ -35,5 +35,31 @@ In this case, because no language type was specified, OpenShift will determine t
 If needing to select a specific Python version when using ``oc new-app``, you should instead use the form:
 
 ```
-oc new-app https://github.com/bugbiteme/os-sample-python-flask.git
+oc new-app python:2.7~https://github.com/bugbiteme/os-sample-python-flask.git
 ```
+To create a route to access the application, run the command:
+
+```
+oc expose service os-sample-python-flask
+```
+
+and get the route/url to access the app, type the command:
+
+```
+ oc get route
+```
+
+output:
+
+```
+NAME                    HOST/PORT                                               PATH       SERVICES                 PORT      TERMINATION   WILDCARD
+
+os-sample-python-flask   os-sample-python-flask-python.192.168.99.100.nip.io               os-sample-python-flask   8080-tcp                 None
+```
+
+and point your browser to `http://os-sample-python-flask-python.<ip address>.nip.io`
+
+
+
+
+ 
