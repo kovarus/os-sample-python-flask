@@ -1,6 +1,6 @@
 # Flask Sample Application
 
-*Giving credit where credit is due, this project has been forked from [https://github.com/OpenShiftDemos/os-sample-python](). You can fin other fantastic OpenShift demo projects at [https://github.com/OpenShiftDemos]().*
+*Giving credit where credit is due, this project has been forked from [https://github.com/OpenShiftDemos/os-sample-python](). You can find other fantastic OpenShift demo projects at [https://github.com/OpenShiftDemos]().*
 
 This repository provides a sample Python web application implemented using the Flask web framework and hosted using ``gunicorn``. It is intended to be used to demonstrate deployment of Python web applications to OpenShift 3.
 
@@ -58,6 +58,11 @@ os-sample-python-flask   os-sample-python-flask-python.192.168.99.100.nip.io    
 ```
 
 and point your browser to `http://os-sample-python-flask-python.<ip address>.nip.io`
+
+From here you can fork and edit as you please!
+
+
+You can find a great Flask tutorial for beginners [here](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
 
 

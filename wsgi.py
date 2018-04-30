@@ -3,15 +3,18 @@ from flask import render_template
 
 application = Flask(__name__)
 
+
 @application.route('/hello')
 def hello():
     return 'Hello World!'
+
 
 @application.route('/')
 @application.route('/index')
 def index():
     user = {'username': 'Leon'}
-    return render_template('index.html', title='home', user=user)
+    return render_template('index.html', title='Flask on OpenShift', user=user)
+
 
 if __name__ == '__main__':
     application.run()
