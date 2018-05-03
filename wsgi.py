@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import render_template
 
+import socket
+
 application = Flask(__name__)
 
 
@@ -13,7 +15,8 @@ def hello():
 @application.route('/index')
 def index():
     user = {'username': 'Leon'}
-    return render_template('index.html', title='Flask on OpenShift', user=user)
+    hostname = socket.gethostname()
+    return render_template('index.html', title='Flask on OpenShift', user=user, hostname=hostname)
 
 
 if __name__ == '__main__':
