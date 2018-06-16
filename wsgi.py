@@ -17,7 +17,7 @@ def hello():
 @application.route('/index')
 def index():
     now = datetime.datetime.now()
-    user = {'username': 'Leon'}
+    user = {'username': 'User'}
     hostname = socket.gethostname()
     return render_template('index.html', title='Flask on OpenShift',
                            user=user,
