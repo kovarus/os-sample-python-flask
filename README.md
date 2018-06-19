@@ -29,13 +29,13 @@ as having selected the most up to date Python version available, which at this t
 The HTTPS URL of this code repository which should be supplied to the _Git Repository URL_ field when using _Add to 
 project_ is:
 
-* https://github.com/bugbiteme/os-sample-python-flask.git
+* https://github.com/kovarus/os-sample-python-flask.git
 
 If using the ``oc`` command line tool instead of the OpenShift web console, to deploy this sample Python web 
 application, you can run:
 
 ```
-oc new-app https://github.com/bugbiteme/os-sample-python-flask.git
+oc new-app https://github.com/kovarus/os-sample-python-flask.git
 ```
 
 In this case, because no language type was specified, OpenShift will determine the language by inspecting the code 
@@ -45,7 +45,7 @@ including a Python application. When such automatic detection is used, ``python:
 If needing to select a specific Python version when using ``oc new-app``, you should instead use the form:
 
 ```
-oc new-app python:2.7~https://github.com/bugbiteme/os-sample-python-flask.git
+oc new-app python:2.7~https://github.com/kovarus/os-sample-python-flask.git
 ```
 To create a route to access the application, run the command:
 
