@@ -64,10 +64,10 @@ output:
 ```
 NAME                    HOST/PORT                                               PATH       SERVICES                 PORT      TERMINATION   WILDCARD
 
-os-sample-python-flask   os-sample-python-flask-python.192.168.99.100.nip.io               os-sample-python-flask   8080-tcp                 None
+hello-py      hello-py-python-app.192.168.99.100.nip.io             hello-py               8080-tcp                 None
 ```
 
-and point your browser to `http://os-sample-python-flask-python.<ip address>.nip.io`
+and point your browser to `http://hello-py-python-app.<ip address>.nip.io`
 
 From here you can fork and edit as you please!
 
