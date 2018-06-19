@@ -35,7 +35,7 @@ If using the ``oc`` command line tool instead of the OpenShift web console, to d
 application, you can run:
 
 ```
-oc new-app https://github.com/kovarus/os-sample-python-flask.git
+oc new-app https://github.com/kovarus/os-sample-python-flask.git --name hello-py
 ```
 
 In this case, because no language type was specified, OpenShift will determine the language by inspecting the code 
@@ -45,12 +45,12 @@ including a Python application. When such automatic detection is used, ``python:
 If needing to select a specific Python version when using ``oc new-app``, you should instead use the form:
 
 ```
-oc new-app python:2.7~https://github.com/kovarus/os-sample-python-flask.git
+oc new-app python:2.7~https://github.com/kovarus/os-sample-python-flask.git --name hello-py
 ```
 To create a route to access the application, run the command:
 
 ```
-oc expose service os-sample-python-flask
+oc expose service hello-py
 ```
 
 and get the route/url to access the app, type the command:
